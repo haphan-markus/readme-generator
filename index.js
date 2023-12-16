@@ -1,7 +1,7 @@
 const fs = require("fs");
 const path = require('path');
 const inquirer = require("inquirer");
-const generateMarkdown = require("./utils/generateMarkdown"); // Use this variable to call the generateMarkdown.js file inside the utils folder. When this file is call, it will call the function generateMarkdown through the module.exports.
+const generateMarkdown = require("./utils/generateMarkdown.js") ; // Use this variable to call the generateMarkdown.js file inside the utils folder. When this file is call, it will call the function generateMarkdown through the module.exports.
 // Currently, it will return the # ${data.title} when passing a value as "data"
 
 // array of questions for user
@@ -20,10 +20,22 @@ const questions = [
 // function to write README file - after getting the data from the prompt, it will pass it into 
 function writeToFile(fileName, data) {
     console.log('data inside writetofile', data);
-    fs.writeFile(fileName, JSON.stringify(data, null, '\t'),(err) => {
-        generateMarkdown(JSON.stringify(data, null, '\t'));
+    const { ProjectTitle , ProjectDescription, InstallationInstructions } = data;
+    console.log('Data retrieve: ',data);
+    console.log(ProjectTitle);
+    fs.writeFile(fileName, ProjectTitle, (err) => {
+        console.log(generateMarkdown);
+        generateMarkdown.generateMarkdown(ProjectTitle);
+        generateMarkdown(ProjectTitle);
         err ? console.err : console.log('Error committed');
     })
+    // fs.writeFile(fileName, JSON.stringify(data, null, '\t'),(err) => {
+        
+    //     for (const value of data) {
+    //         generateMarkdown(JSON.stringify(value, null, '\t'));
+    //     }
+    //     err ? console.err : console.log('Error committed');
+    // })
 }
 
 // function to initialize program
@@ -34,17 +46,17 @@ function init() {
  .prompt ([
      {
          type: 'Input',
-         name: 'Project title',
+         name: 'ProjectTitle',
          message: questions[0]
      },
      {
          type: 'Input',
-         name: 'Project description',
+         name: 'ProjectDescription',
          message: questions[1]
      },
      {
          type: 'Input',
-         name: 'Installation instructions',
+         name: 'InstallationInstructions',
          message: questions[2]
      }
  ]).then((response) => {
