@@ -46,22 +46,53 @@ function init() {
  .prompt ([
      {
          type: 'Input',
-         name: 'ProjectTitle',
+         name: 'title',
          message: questions[0]
      },
      {
          type: 'Input',
-         name: 'ProjectDescription',
+         name: 'description',
          message: questions[1]
      },
      {
          type: 'Input',
-         name: 'InstallationInstructions',
+         name: 'installationInstructions',
          message: questions[2]
+     },
+     {
+        type: 'Input',
+        name: 'usage',
+        message: questions[3]
+     },
+     {
+        type: 'Input',
+        name: 'contributing',
+        message: questions[4]
+     },
+     {
+        type: 'Input',
+        name: 'tests',
+        message: questions[5]
+     },
+     {
+        type: 'Input',
+        name: 'licence',
+        message: questions[6]
+     },
+     {
+        type: 'Input',
+        name: 'github',
+        message: questions[7]
+     },
+     {
+        type: 'Input',
+        name: 'email',
+        message: questions[8]
      }
  ]).then((response) => {
     console.log('Response inside init', response);
-     writeToFile('READMEtest.md',response);
+    
+    writeToFile('READMEtest.md',response);
      // fs.writeFile('READMEtest.md', JSON.stringify(response, null, '\t'), (err) => { // This will return a file with an object containing the answers - perhaps put the prompt into the init()
      //     console.log('There is a mistake');
      // })
