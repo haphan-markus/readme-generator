@@ -26,7 +26,7 @@ function writeToFile(fileName, data) {
     fs.writeFile(fileName, ProjectTitle, (err) => {
         console.log(generateMarkdown);
         generateMarkdown.generateMarkdown(ProjectTitle);
-        generateMarkdown(ProjectTitle);
+        // generateMarkdown(ProjectTitle);
         err ? console.err : console.log('Error committed');
     })
     // fs.writeFile(fileName, JSON.stringify(data, null, '\t'),(err) => {
