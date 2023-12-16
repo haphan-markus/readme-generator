@@ -20,13 +20,13 @@ const questions = [
 // function to write README file - after getting the data from the prompt, it will pass it into 
 function writeToFile(fileName, data) {
     console.log('data inside writetofile', data);
-    const { ProjectTitle , ProjectDescription, InstallationInstructions } = data;
+    // const { ProjectTitle , ProjectDescription, InstallationInstructions } = data;
     console.log('Data retrieve: ',data);
-    console.log(ProjectTitle);
-    fs.writeFile(fileName, ProjectTitle, (err) => {
-        console.log(generateMarkdown);
-        generateMarkdown.generateMarkdown(ProjectTitle);
-        // generateMarkdown(ProjectTitle);
+    
+    fs.writeFile(fileName, generateMarkdown.generateMarkdown(data), (err) => {
+        console.log(data);
+        // generateMarkdown.generateMarkdown(JSON.parse(data));
+        console.log(JSON.parse(data));
         err ? console.err : console.log('Error committed');
     })
     // fs.writeFile(fileName, JSON.stringify(data, null, '\t'),(err) => {
