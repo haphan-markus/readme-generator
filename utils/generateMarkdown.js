@@ -5,4 +5,4 @@ function generateMarkdown(data) {
 `;
 }
 
-module.exports = generateMarkdown;
+module.exports = generateMarkdown; // This will call the generateMarkdown function inside this file

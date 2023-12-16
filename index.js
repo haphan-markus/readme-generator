@@ -1,7 +1,8 @@
 const fs = require("fs");
 const path = require('path');
 const inquirer = require("inquirer");
-const generateMarkdown = require("./utils/generateMarkdown");
+const generateMarkdown = require("./utils/generateMarkdown"); // Use this variable to call the generateMarkdown.js file inside the utils folder. When this file is call, it will call the function generateMarkdown through the module.exports.
+// Currently, it will return the # ${data.title} when passing a value as "data"
 
 // array of questions for user
 const questions = [
@@ -46,7 +47,9 @@ function writeToFile(fileName, data) {
 
 // function to initialize program
 function init() {
-
+ // Put the inquirer prompt into here
+ // In the .then(response): allow it to get the answer and then pass it into the file
+ // 
 }
 
 // function call to initialize program
