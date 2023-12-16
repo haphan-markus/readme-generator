@@ -13,7 +13,7 @@ const questions = [
 'What is the contribution guidelines for users?',
 'Please describe your test instructions.',
 'Please choose an appropriate licence',
-'What is your GitHub name?',
+'What is your GitHub username?',
 'What is your email address?',
 ];
 
@@ -26,7 +26,7 @@ function writeToFile(fileName, data) {
     fs.writeFile(fileName, generateMarkdown.generateMarkdown(data), (err) => {
         console.log(data);
         // generateMarkdown.generateMarkdown(JSON.parse(data));
-        console.log(JSON.parse(data));
+        // console.log(JSON.parse(data));
         err ? console.err : console.log('Error committed');
     })
     // fs.writeFile(fileName, JSON.stringify(data, null, '\t'),(err) => {
