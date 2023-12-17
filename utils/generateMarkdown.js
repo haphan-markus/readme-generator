@@ -1,6 +1,15 @@
 // function to generate markdown for README
 function generateMarkdown(data) {
   let bar = "```";
+  let link = '';
+  let licence = data.licence.replace(/ /g,"-");
+  let licenceLowercase = licence.toLowerCase();
+  // if (data.licence === "None") {
+  //   link = "None";
+  // } else {
+    
+  //   link = "[${data.licence}](https://choosealicense.com/licenses/${licenceLowercase}/)";
+  // }
   return `
   # ${data.title}
 
@@ -9,15 +18,17 @@ function generateMarkdown(data) {
 
   ## User story
   
+  ${bar}
   * ${data.userstory}
+  ${bar}
 
   ## Tables of Contents
     * Installation
     * Usage
     * Licence
-    *   Contributing
-    *   Tests
-    *   Questions
+      * Contributing
+      * Tests
+      * Questions
 
   ## Installation
 
@@ -38,8 +49,8 @@ function generateMarkdown(data) {
   ## Tests
 
   ## Licence
-  ${data.licence}
-
+  
+  [${data.licence}](https://choosealicense.com/licenses/${licenceLowercase});
 `;
 }
 

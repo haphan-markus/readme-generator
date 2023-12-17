@@ -91,6 +91,11 @@ function init() {
         type: 'Input',
         name: 'email',
         message: questions[8]
+     },
+     {
+         type: 'Input',
+         name: 'userstory',
+         message: questions[9]
      }
  ]).then((response) => {
     console.log('Response inside init', response);
