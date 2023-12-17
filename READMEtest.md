@@ -1,22 +1,39 @@
-# File description
+
+  # sd
 
   ## Description
-  This is to generate readme document automatically
+  cd
+
+  ## User story
+  
+  * undefined
+
+  ## Tables of Contents
+    * Installation
+    * Usage
+    * Licence
+    *   Contributing
+    *   Tests
+    *   Questions
 
   ## Installation
-  npm i -y
 
+  To install necessary dependencies, run the following command:
+
+  ``` bash 
+  sd
+  ```
+  
   ## Usage
-  Please follow the instructions for the deployment
+  w
 
   ## Contributing
-  Pull requests are welcom. For major changes, please open an issue first to discuss what you would like to change. Please make sure to update tests as appropriate.
+  45
 
-  For further discussion, please contact me via https://github.com/haphan-markus and email phanhuuha1993@gmail.com.
+  For further discussion, please contact me via https://github.com/haphan-markus and email phan.
 
-  ## Deployment
-  
+  ## Tests
 
   ## Licence
-  MIT
+  APACHE 2.0
 

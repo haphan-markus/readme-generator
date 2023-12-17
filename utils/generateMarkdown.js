@@ -1,5 +1,6 @@
 // function to generate markdown for README
 function generateMarkdown(data) {
+  let bar = "```";
   return `
   # ${data.title}
 
@@ -9,10 +10,23 @@ function generateMarkdown(data) {
   ## User story
   
   * ${data.userstory}
-  
-  ## Installation
-  ${data.installationInstructions}
 
+  ## Tables of Contents
+    * Installation
+    * Usage
+    * Licence
+    *   Contributing
+    *   Tests
+    *   Questions
+
+  ## Installation
+
+  To install necessary dependencies, run the following command:
+
+  ${bar} bash 
+  ${data.installationInstructions}
+  ${bar}
+  
   ## Usage
   ${data.usage}
 
@@ -21,8 +35,7 @@ function generateMarkdown(data) {
 
   For further discussion, please contact me via https://github.com/${data.github} and email ${data.email}.
 
-  ## Deployment
-  
+  ## Tests
 
   ## Licence
   ${data.licence}
