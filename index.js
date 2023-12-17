@@ -1,20 +1,21 @@
 const fs = require("fs");
-const path = require('path');
+// const path = require('path');
 const inquirer = require("inquirer");
 const generateMarkdown = require("./utils/generateMarkdown.js") ; // Use this variable to call the generateMarkdown.js file inside the utils folder. When this file is call, it will call the function generateMarkdown through the module.exports.
 // Currently, it will return the # ${data.title} when passing a value as "data"
 
 // array of questions for user
 const questions = [
-'What is your project title?',
-'What is your project description?',
-'What are your installation instructions?',
-'What is the usage information for the user?',
-'What is the contribution guidelines for users?',
-'Please describe your test instructions.',
-'Please choose an appropriate licence',
+'What is your project`s title?',
+'Please write a short description of your project.',
+'What command should be run to install dependencies?',
+'What does the user need to know about using the repo?',
+'What does the user need to know about contributing to the repo?',
+'What command should be run to run tests?',
+'What kind of licence should your project have',
 'What is your GitHub username?',
 'What is your email address?',
+'Please write the user story for your project.',
 ];
 
 // function to write README file - after getting the data from the prompt, it will pass it into 
@@ -42,6 +43,7 @@ function writeToFile(fileName, data) {
 function init() {
  // Put the inquirer prompt into here
  // In the .then(response): allow it to get the answer and then pass it into the file
+//  https://www.npmjs.com/package/inquirer
  inquirer
  .prompt ([
      {
@@ -75,8 +77,9 @@ function init() {
         message: questions[5]
      },
      {
-        type: 'Input',
+        type: 'list',
         name: 'licence',
+        choice: ['MIT', 'APACHE 2.0', 'GPL 3.0', 'BSD 3', 'None'],
         message: questions[6]
      },
      {
@@ -93,9 +96,6 @@ function init() {
     console.log('Response inside init', response);
     
     writeToFile('READMEtest.md',response);
-     // fs.writeFile('READMEtest.md', JSON.stringify(response, null, '\t'), (err) => { // This will return a file with an object containing the answers - perhaps put the prompt into the init()
-     //     console.log('There is a mistake');
-     // })
  
  });
 }
