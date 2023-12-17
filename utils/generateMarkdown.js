@@ -44,7 +44,7 @@ function generateMarkdown(data) {
   ## Contributing
   ${data.contributing}
 
-  For further discussion, please contact me via https://github.com/${data.github} and email ${data.email}.
+  For further discussion, please contact me via my Github [${data.github}](https://github.com/${data.github}) and email ${data.email}.
 
   ## Tests
 
