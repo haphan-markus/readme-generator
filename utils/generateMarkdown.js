@@ -50,7 +50,8 @@ function generateMarkdown(data) {
 
   ## Licence
   
-  [${data.licence}](https://choosealicense.com/licenses/${licenceLowercase});
+  [${data.licence}](https://choosealicense.com/licenses/${licenceLowercase})
+
 `;
 }
 
