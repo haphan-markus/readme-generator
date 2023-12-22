@@ -1,23 +1,24 @@
 
-  # glassmonster
+  # ha
 
   ## Description
-  description
+  phab
 
   ## User story
   
   ```
-  * the user will focus on writing code instead of making readme
+  nemesis
   ```
 
   ## Tables of Contents
-    * Installation
-    * Usage
-    * Licence
-      * Contributing
-      * Tests
-      * Questions
-
+  
+  [Installation](#installation)
+  [Usage](#usage)
+    [Contributing](#contributing)
+    [Tests](#tests)
+    [Questions](#questions)
+  [Licence](#licence)
+  
   ## Installation
 
   To install necessary dependencies, run the following command:
@@ -27,16 +28,22 @@
   ```
   
   ## Usage
-  just make sure you know about the package
 
-  ## Contributing
-  just email me
+  
 
-  For further discussion, please contact me via my Github [haphan-markus](https://github.com/haphan-markus) and email haphan.
+  ### Contributing
 
-  ## Tests
+  email me
+
+  ### Tests
+
+  npm test
+
+  ### Questions
+
+  If you have any questions, please contact me via my Github [haphan](https://github.com/haphan) and email lalala.
 
   ## Licence
   
-  [MIT](https://choosealicense.com/licenses/mit)
+  MIT
 

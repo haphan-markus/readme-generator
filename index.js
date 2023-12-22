@@ -24,7 +24,7 @@ function writeToFile(fileName, data) {
     // const { ProjectTitle , ProjectDescription, InstallationInstructions } = data;
     console.log('Data retrieve: ',data);
     
-    fs.writeFile(fileName, generateMarkdown.generateMarkdown(data), (err) => {
+    fs.writeFile(fileName, generateMarkdown(data), (err) => {
         console.log(data);
         // generateMarkdown.generateMarkdown(JSON.parse(data));
         // console.log(JSON.parse(data));

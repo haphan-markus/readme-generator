@@ -1,13 +1,12 @@
 // function to generate markdown for README
 function generateMarkdown(data) {
   let bar = "```";
-  // let link = '';
-  let licence = data.licence.replace(/ /g,"-");
-  let licenceLowercase = licence.toLowerCase();
+  let unorderedList = "-";
+  // let licence = data.licence.replace(/ /g,"-");
+  // let licenceLowercase = licence.toLowerCase();
   // if (data.licence === "None") {
   //   link = "None";
   // } else {
-    
   //   link = "[${data.licence}](https://choosealicense.com/licenses/${licenceLowercase}/)";
   // }
   return `
@@ -19,17 +18,17 @@ function generateMarkdown(data) {
   ## User story
   
   ${bar}
-  * ${data.userstory}
+  ${data.userstory}
   ${bar}
 
   ## Tables of Contents
   
-  * [Installation](#installation)
-  * [Usage](#usage)
-      * [Contributing](#contributing)
-      * [Tests](#tests)
-      * [Questions](#questions)
-  * [Licence](#licence)
+  + [Installation](#installation) \n
+  + [Usage](#usage) \n
+      + [Contributing](#contributing) \n
+      + [Tests](#tests) \n
+      + [Questions](#questions) \n
+  + [Licence](#licence) \n
   
   ## Installation
 
@@ -40,22 +39,26 @@ function generateMarkdown(data) {
   ${bar}
   
   ## Usage
+
   ${data.usage}
 
   ### Contributing
-  ${data.contributing}
 
-  For further discussion, please contact me via my Github [${data.github}](https://github.com/${data.github}) and email ${data.email}.
+  ${data.contributing}
 
   ### Tests
 
+  ${data.tests}
+
   ### Questions
+
+  If you have any questions, please contact me via my Github [${data.github}](https://github.com/${data.github}) and email ${data.email}.
 
   ## Licence
   
-  [${data.licence}](https://choosealicense.com/licenses/${licenceLowercase})
+  ${data.licence}
 
 `;
 }
 
-module.exports = { generateMarkdown }; // This will call the generateMarkdown function inside this file
+module.exports = generateMarkdown; // This will call the generateMarkdown function inside this file
