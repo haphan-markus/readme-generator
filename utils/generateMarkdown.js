@@ -1,7 +1,7 @@
 // function to generate markdown for README
 function generateMarkdown(data) {
   let bar = "```";
-  let link = '';
+  // let link = '';
   let licence = data.licence.replace(/ /g,"-");
   let licenceLowercase = licence.toLowerCase();
   // if (data.licence === "None") {

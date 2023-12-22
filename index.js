@@ -79,6 +79,7 @@ function init() {
      {
         type: 'list',
         name: 'licence',
+        default: '(Use arrow keys)', // Use default function to suggest or give some instructions to users
         choices: ['MIT', 'APACHE 2.0', 'GPL 3.0', 'BSD 3', 'None'],
         message: questions[6]
      },

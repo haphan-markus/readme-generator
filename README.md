@@ -1,4 +1,4 @@
-# readme-generator
+# README generator
 CLI project to make readmes easier
 
 ## Description
