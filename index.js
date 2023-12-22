@@ -59,6 +59,7 @@ function init() {
      {
          type: 'Input',
          name: 'installationInstructions',
+         default: 'npm i', // add default value for suggestions
          message: questions[2]
      },
      {
@@ -74,12 +75,13 @@ function init() {
      {
         type: 'Input',
         name: 'tests',
+        default: 'npm test',
         message: questions[5]
      },
      {
         type: 'list',
         name: 'licence',
-        default: '(Use arrow keys)', // Use default function to suggest or give some instructions to users
+        default: 'Use arrow keys', // Use default function to suggest or give some instructions to users
         choices: ['MIT', 'APACHE 2.0', 'GPL 3.0', 'BSD 3', 'None'],
         message: questions[6]
      },
