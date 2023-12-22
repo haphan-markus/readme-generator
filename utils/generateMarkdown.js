@@ -23,13 +23,14 @@ function generateMarkdown(data) {
   ${bar}
 
   ## Tables of Contents
-    * Installation
-    * Usage
-    * Licence
-      * Contributing
-      * Tests
-      * Questions
-
+  
+  * [Installation](#installation)
+  * [Usage](#usage)
+      * [Contributing](#contributing)
+      * [Tests](#tests)
+      * [Questions](#questions)
+  * [Licence](#licence)
+  
   ## Installation
 
   To install necessary dependencies, run the following command:
@@ -41,12 +42,14 @@ function generateMarkdown(data) {
   ## Usage
   ${data.usage}
 
-  ## Contributing
+  ### Contributing
   ${data.contributing}
 
   For further discussion, please contact me via my Github [${data.github}](https://github.com/${data.github}) and email ${data.email}.
 
-  ## Tests
+  ### Tests
+
+  ### Questions
 
   ## Licence
   

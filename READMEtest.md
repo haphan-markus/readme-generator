@@ -1,13 +1,13 @@
 
-  # cd
+  # glassmonster
 
   ## Description
-  as
+  description
 
   ## User story
   
   ```
-  * 65
+  * the user will focus on writing code instead of making readme
   ```
 
   ## Tables of Contents
@@ -23,20 +23,20 @@
   To install necessary dependencies, run the following command:
 
   ``` bash 
-  caas
+  npm i
   ```
   
   ## Usage
-  23
+  just make sure you know about the package
 
   ## Contributing
-  cdf
+  just email me
 
-  For further discussion, please contact me via my Github [jdsfsc](https://github.com/jdsfsc) and email as.
+  For further discussion, please contact me via my Github [haphan-markus](https://github.com/haphan-markus) and email haphan.
 
   ## Tests
 
   ## Licence
   
-  [BSD 3](https://choosealicense.com/licenses/bsd-3)
+  [MIT](https://choosealicense.com/licenses/mit)
 
