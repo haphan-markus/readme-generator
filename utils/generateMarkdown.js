@@ -48,7 +48,7 @@ function generateMarkdown(data) {
 
   ## Licence
   
-  ${data.licence}
+  This repository is authorised under ${data.licence} licence.
 
 `;
 }

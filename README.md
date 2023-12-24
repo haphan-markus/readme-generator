@@ -28,7 +28,9 @@ User should know how to navigate or use the command prompt or terminal.
 
 ## Visual
 
-This section demonstrates 
+This section provides a walkthrough video on how the application works.
+
+
 
 ## Licence
 
