@@ -1,12 +1,6 @@
 // function to generate markdown for README
 function generateMarkdown(data) {
   let bar = "```";
-  let unorderedList = "-";
-  // if (data.licence === "None") {
-  //   link = "None";
-  // } else {
-  //   link = "[${data.licence}](https://choosealicense.com/licenses/${licenceLowercase}/)";
-  // }
   return `
   # ${data.title}
 
