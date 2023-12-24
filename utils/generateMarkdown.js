@@ -2,8 +2,6 @@
 function generateMarkdown(data) {
   let bar = "```";
   let unorderedList = "-";
-  // let licence = data.licence.replace(/ /g,"-");
-  // let licenceLowercase = licence.toLowerCase();
   // if (data.licence === "None") {
   //   link = "None";
   // } else {

@@ -1,23 +1,29 @@
 
-  # ha
+  # Glassy
 
   ## Description
-  phab
+  cool
 
   ## User story
   
   ```
-  nemesis
+  User story
   ```
 
   ## Tables of Contents
   
-  [Installation](#installation)
-  [Usage](#usage)
-    [Contributing](#contributing)
-    [Tests](#tests)
-    [Questions](#questions)
-  [Licence](#licence)
+  + [Installation](#installation) 
+
+  + [Usage](#usage) 
+
+      + [Contributing](#contributing) 
+
+      + [Tests](#tests) 
+
+      + [Questions](#questions) 
+
+  + [Licence](#licence) 
+
   
   ## Installation
 
@@ -29,7 +35,7 @@
   
   ## Usage
 
-  
+  make sure you know how to navigate or use terminal/ command prompt
 
   ### Contributing
 
@@ -41,7 +47,7 @@
 
   ### Questions
 
-  If you have any questions, please contact me via my Github [haphan](https://github.com/haphan) and email lalala.
+  If you have any questions, please contact me via my Github [haphan-markus](https://github.com/haphan-markus) and email haphan.
 
   ## Licence
   
