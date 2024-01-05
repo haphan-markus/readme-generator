@@ -30,7 +30,7 @@ User should know how to navigate or use the command prompt or terminal.
 
 This section provides a walkthrough video on how the application works.
 
-
+[Video](https://youtu.be/tJTTa79bLmo)
 
 ## Licence
 
