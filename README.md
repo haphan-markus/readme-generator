@@ -32,6 +32,8 @@ This section provides a walkthrough video on how the application works.
 
 [Video](https://youtu.be/tJTTa79bLmo)
 
+A sample README "READMEtest.md" generated using the application is also attached in the repo.
+
 ## Licence
 
 [MIT](https://choosealicense.com/licenses/MIT)
